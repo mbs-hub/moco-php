@@ -1,0 +1,77 @@
+{
+    "name": "mehdibagheri/moco-php",
+    "description": "PHP SDK for the MOCO API",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "psr/http-message": "^1.0 || ^2.0",
+        "psr/http-client-implementation": "^1.0",
+        "php-http/httplug": "^2.0",
+        "php-http/message-factory": "^1.0",
+        "php-http/discovery": "^1.0",
+        "symfony/http-client": "^5.4 || ^6.0 || ^7.0"
+    },
+    "require-dev": {
+        "php-http/mock-client": "^1.5",
+        "php-http/message": "^1.0",
+        "phpstan/phpstan": "^1.8",
+        "squizlabs/php_codesniffer": "^3.7",
+        "phpunit/phpunit": "^9.5 || ^10.0",
+        "symfony/dotenv": "^5.4 || ^6.0 || ^7.0",
+        "php-http/client-common": "^2.6",
+        "vimeo/psalm": "^4.29 || ^5.0",
+        "nyholm/psr7": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Moco\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "@test:unit",
+            "@test:functional"
+        ],
+        "test:unit": "phpunit --testsuite=unit",
+        "test:functional": "phpunit --testsuite=functional",
+        "test:coverage": "phpunit --coverage-html coverage/",
+        "test:coverage-clover": "phpunit --coverage-clover coverage.xml",
+        "analyse": [
+            "@psalm",
+            "@phpstan"
+        ],
+        "psalm": "psalm",
+        "phpstan": "phpstan analyse src/",
+        "style-check": "phpcs src/ tests/ --standard=PSR12",
+        "style-fix": "phpcbf src/ tests/ --standard=PSR12",
+        "quality": [
+            "@style-check",
+            "@analyse",
+            "@test"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        },
+        "optimize-autoloader": true,
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
