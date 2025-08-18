@@ -77,7 +77,7 @@ This library uses the following PSR-compatible packages:
 Install the latest version with [Composer](https://getcomposer.org/):
 
 ```bash
-composer require mehdibagheri/moco-php
+composer require mbs-hub/moco-php
 ```
 
 ## 🚀 Quick Start
