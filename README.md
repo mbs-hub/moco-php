@@ -15,6 +15,23 @@ The **MOCO PHP SDK** provides convenient access to the [MOCO API](https://everii
 - **🔌 Flexible HTTP Client**: Works with any PSR-18 compatible HTTP client
 - **🎯 Full MOCO API Coverage**: Support for all major MOCO features including users, projects, activities, invoices, and more
 
+## 🐛 Bug Reports
+
+Found a bug? We'd love to hear about it! Please help us improve the MOCO PHP SDK by reporting any issues you encounter.
+
+**🔗 Report a Bug**: [Create an issue on GitHub](https://github.com/mbs-hub/moco-php/issues)
+
+When reporting a bug, please include:
+- 📝 Clear description of the issue
+- 🔄 Steps to reproduce the problem
+- 🎯 Expected vs actual behavior
+- 🛠️ PHP version and SDK version
+- 📋 Any relevant code snippets or error messages
+
+Your feedback helps make this library better for everyone! 🚀
+
+
+
 ## 📑 Table of Contents
 
 - [Requirements](#-requirements)
