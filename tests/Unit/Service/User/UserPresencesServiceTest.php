@@ -5,9 +5,9 @@ namespace Tests\Unit\Service\User;
 use Moco\Exception\InvalidRequestException;
 use Moco\Exception\InvalidResponseException;
 use Moco\Exception\NotFoundException;
-use Tests\Unit\Service\AbstractServiceTest;
+use Tests\Unit\Service\UnitTestCase;
 
-class UserPresencesServiceTest extends AbstractServiceTest
+class UserPresencesServiceTest extends UnitTestCase
 {
     private array $createParams = [
         'date' => '2018-07-03',

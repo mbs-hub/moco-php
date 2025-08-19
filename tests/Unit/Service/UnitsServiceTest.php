@@ -4,7 +4,7 @@ namespace Tests\Unit\Service;
 
 use Moco\Entity\Unit;
 
-class UnitsServiceTest extends AbstractServiceTest
+class UnitsServiceTest extends UnitTestCase
 {
     private array $expectedUnit = [
         'id' => 909147861,

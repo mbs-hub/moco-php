@@ -3,9 +3,9 @@
 namespace Tests\Functional\Service\User;
 
 use Moco\Exception\InvalidRequestException;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class UserPresencesServiceTest extends AbstractServiceTest
+class UserPresencesServiceTest extends FunctionalTestCase
 {
     private array $createParams = [
         'date' => '2023-07-03',

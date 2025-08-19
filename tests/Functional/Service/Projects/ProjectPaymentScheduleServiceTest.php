@@ -3,9 +3,9 @@
 namespace Functional\Service\Projects;
 
 use Moco\Entity\ProjectPaymentSchedule;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class ProjectPaymentScheduleServiceTest extends AbstractServiceTest
+class ProjectPaymentScheduleServiceTest extends FunctionalTestCase
 {
     public function testCreate(): array
     {

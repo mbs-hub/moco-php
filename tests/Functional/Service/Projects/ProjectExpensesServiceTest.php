@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Functional\Service\Projects;
 
 use Moco\Entity\ProjectExpense;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class ProjectExpensesServiceTest extends AbstractServiceTest
+class ProjectExpensesServiceTest extends FunctionalTestCase
 {
     private int $testProjectId = 947556942; // This should be replaced with a valid project ID
 

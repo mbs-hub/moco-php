@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Tests\Functional\Service\Invoice;
 
 use Moco\Entity\Invoice;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class InvoicesServiceTest extends AbstractServiceTest
+class InvoicesServiceTest extends FunctionalTestCase
 {
     private array $createParams = [
         'customer_id' => 762610111,

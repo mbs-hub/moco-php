@@ -4,9 +4,9 @@ namespace Functional\Service;
 
 use Moco\Entity\Receipt;
 use Moco\Exception\InvalidRequestException;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class ReceiptsServiceTest extends AbstractServiceTest
+class ReceiptsServiceTest extends FunctionalTestCase
 {
     public function testCreate(): Receipt
     {

@@ -7,9 +7,9 @@ namespace Tests\Functional\Service\Invoice;
 use Amp\Emitter;
 use Moco\Entity\InvoiceReminder;
 use Moco\Struct\Email;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class InvoiceRemindersServiceTest extends AbstractServiceTest
+class InvoiceRemindersServiceTest extends FunctionalTestCase
 {
     private array $createParams = [
         'invoice_id' => 6002041, // This should be replaced with a valid invoice ID in actual testing

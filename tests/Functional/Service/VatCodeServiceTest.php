@@ -5,7 +5,7 @@ namespace Tests\Functional\Service;
 use Moco\Entity\VatCode;
 use Moco\Exception\InvalidRequestException;
 
-class VatCodeServiceTest extends AbstractServiceTest
+class VatCodeServiceTest extends FunctionalTestCase
 {
     public function testGetAllSalesVatCodes(): void
     {

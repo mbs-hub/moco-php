@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Tests\Functional\Service\Purchases;
 
 use Moco\Entity\PurchaseBookkeepingExport;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class PurchaseBookkeepingExportsServiceTest extends AbstractServiceTest
+class PurchaseBookkeepingExportsServiceTest extends FunctionalTestCase
 {
     public function testCreate(): int
     {

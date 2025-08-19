@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Functional\Service\Projects;
 
 use Moco\Entity\ProjectGroup;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class ProjectGroupsServiceTest extends AbstractServiceTest
+class ProjectGroupsServiceTest extends FunctionalTestCase
 {
     public function testGetAll(): void
     {

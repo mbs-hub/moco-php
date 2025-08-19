@@ -6,9 +6,9 @@ namespace Tests\Functional\Service\Deal;
 
 use Functional\Service\User\UsersServiceTest;
 use Moco\Entity\Deal;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class DealServiceTest extends AbstractServiceTest
+class DealServiceTest extends FunctionalTestCase
 {
     public function testCreate(): int
     {

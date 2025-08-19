@@ -2,9 +2,9 @@
 
 namespace Tests\Functional\Service\Account;
 
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class InternalHourlyRatesServiceTest extends AbstractServiceTest
+class InternalHourlyRatesServiceTest extends FunctionalTestCase
 {
     public function testGet(): array
     {

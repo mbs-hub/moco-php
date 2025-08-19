@@ -4,9 +4,9 @@ namespace Tests\Functional\Service\Account;
 
 use Moco\Entity\Catalog;
 use Moco\Entity\CatalogServiceItem;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class CatalogServicesTest extends AbstractServiceTest
+class CatalogServicesTest extends FunctionalTestCase
 {
     private array $createParams = [
         'title' => 'Catalog entry',

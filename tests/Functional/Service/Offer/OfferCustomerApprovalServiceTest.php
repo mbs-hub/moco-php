@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tests\Functional\Service\Offer;
 
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class OfferCustomerApprovalServiceTest extends AbstractServiceTest
+class OfferCustomerApprovalServiceTest extends FunctionalTestCase
 {
     private int $testOfferId = 1688096; // This should be replaced with a valid offer ID in actual testing
 

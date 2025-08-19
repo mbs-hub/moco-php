@@ -5,7 +5,7 @@ namespace Tests\Functional\Service;
 use Functional\Service\Projects\ProjectsServiceTest;
 use Moco\Entity\Comment;
 
-class CommentsServiceTest extends AbstractServiceTest
+class CommentsServiceTest extends FunctionalTestCase
 {
     public function testCreate(): Comment
     {

@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Functional\Service\Projects;
 
 use Moco\Entity\ProjectContract;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class ProjectContractsServiceTest extends AbstractServiceTest
+class ProjectContractsServiceTest extends FunctionalTestCase
 {
     private int $testProjectId = 947556944; // This should be replaced with a valid project ID
     private int $testUserId = 933736932; // This should be replaced with a valid user ID

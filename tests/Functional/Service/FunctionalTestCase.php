@@ -5,7 +5,7 @@ namespace Tests\Functional\Service;
 use Moco\MocoClient;
 use PHPUnit\Framework\TestCase;
 
-abstract class AbstractServiceTest extends TestCase
+abstract class FunctionalTestCase extends TestCase
 {
     public MocoClient $mocoClient;
     protected int $leaderId;

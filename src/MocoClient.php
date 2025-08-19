@@ -2,8 +2,8 @@
 
 namespace Moco;
 
-use Http\Discovery\HttpClientDiscovery;
 use Http\Discovery\Psr17FactoryDiscovery;
+use Http\Discovery\Psr18ClientDiscovery;
 use Moco\Exception\InvalidRequestException;
 use Moco\Exception\InvalidResponseException;
 use Moco\Exception\NotFoundException;
@@ -52,14 +52,6 @@ use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamFactoryInterface;
-
-//TODO
-//Purchases
-//Units / Teams
-//User Presences
-//User Work Time Adjustments
-//Vat Codes
-//WebHooks
 
 /**
  * @property UnitsService $units
@@ -120,7 +112,7 @@ class MocoClient
             throw new \Exception('Please provide endpoint and token');
         }
 
-        $this->client = HttpClientDiscovery::find();
+        $this->client = Psr18ClientDiscovery::find();
         $this->requestFactory = Psr17FactoryDiscovery::findRequestFactory();
         $this->messageStream = Psr17FactoryDiscovery::findStreamFactory();
         $this->serviceFactory = new ServiceFactory($this);

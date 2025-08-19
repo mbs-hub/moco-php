@@ -4,7 +4,7 @@ namespace Tests\Functional\Service;
 
 use Moco\Entity\WebHook;
 
-class WebHooksServiceTest extends AbstractServiceTest
+class WebHooksServiceTest extends FunctionalTestCase
 {
     public function testGetAllWebHooks(): void
     {

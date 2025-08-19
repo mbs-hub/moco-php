@@ -2,9 +2,9 @@
 
 namespace Tests\Functional\Service\Account;
 
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class CustomPropertiesTest extends AbstractServiceTest
+class CustomPropertiesTest extends FunctionalTestCase
 {
     public function testGet(): void
     {

@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\Service;
 
-class ReportsServiceTest extends AbstractServiceTest
+class ReportsServiceTest extends UnitTestCase
 {
     private array $expectedAbsenceResponse = [
         [

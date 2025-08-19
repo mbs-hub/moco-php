@@ -3,9 +3,9 @@
 namespace Functional\Service\Projects;
 
 use Moco\Entity\ProjectRecurringExpense;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class ProjectRecurringExpenseServiceTest extends AbstractServiceTest
+class ProjectRecurringExpenseServiceTest extends FunctionalTestCase
 {
     public function testCreate(): array
     {

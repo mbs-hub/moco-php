@@ -6,9 +6,9 @@ namespace Tests\Unit\Service\Offer;
 
 use Moco\Entity\OfferCustomerApproval;
 use Moco\Exception\NotFoundException;
-use Tests\Unit\Service\AbstractServiceTest;
+use Tests\Unit\Service\UnitTestCase;
 
-class OfferCustomerApprovalServiceTest extends AbstractServiceTest
+class OfferCustomerApprovalServiceTest extends UnitTestCase
 {
     private array $expectedResponse = [
         "id" => 12345,

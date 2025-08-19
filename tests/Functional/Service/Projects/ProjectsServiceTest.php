@@ -3,10 +3,10 @@
 namespace Functional\Service\Projects;
 
 use Moco\Entity\Project;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 use Tests\Functional\Service\CompaniesServiceTest;
 
-class ProjectsServiceTest extends AbstractServiceTest
+class ProjectsServiceTest extends FunctionalTestCase
 {
     public function testCreate(): Project
     {

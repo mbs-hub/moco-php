@@ -5,9 +5,9 @@ namespace Tests\Unit\Service\Account;
 use Moco\Entity\CatalogServiceItem;
 use Moco\Exception\InvalidRequestException;
 use Moco\Exception\NotFoundException;
-use Tests\Unit\Service\AbstractServiceTest;
+use Tests\Unit\Service\UnitTestCase;
 
-class CatalogServicesTest extends AbstractServiceTest
+class CatalogServicesServiceTest extends UnitTestCase
 {
     private array $createParams = [
         'id' => 123,

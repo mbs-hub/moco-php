@@ -3,9 +3,9 @@
 namespace Functional\Service;
 
 use Moco\Entity\Unit;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class UnitsServiceTest extends AbstractServiceTest
+class UnitsServiceTest extends FunctionalTestCase
 {
     private int $testUnitId = 909195187; // Use an existing test unit ID
 

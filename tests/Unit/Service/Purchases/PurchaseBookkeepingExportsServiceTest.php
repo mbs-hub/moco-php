@@ -7,9 +7,9 @@ namespace Tests\Unit\Service\Purchases;
 use Moco\Entity\PurchaseBookkeepingExport;
 use Moco\Exception\InvalidRequestException;
 use Moco\Exception\NotFoundException;
-use Tests\Unit\Service\AbstractServiceTest;
+use Tests\Unit\Service\UnitTestCase;
 
-class PurchaseBookkeepingExportsServiceTest extends AbstractServiceTest
+class PurchaseBookkeepingExportsServiceTest extends UnitTestCase
 {
     private array $expectedResponse = [
         "id" => 12345,

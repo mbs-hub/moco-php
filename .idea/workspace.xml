@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c41dae3d-2323-4f1e-a344-5029202177e2" name="Changes" comment="chore: update README.md">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/AbstractMocoEntity.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/AbstractMocoEntity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MocoClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MocoClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/AbstractServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/FunctionalTestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Account/CatalogServicesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Account/CatalogServicesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Account/CustomPropertiesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Account/CustomPropertiesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Account/FixedCostsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Account/FixedCostsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Account/HourlyRatesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Account/HourlyRatesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Account/InternalHourlyRatesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Account/InternalHourlyRatesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/ActivitiesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/ActivitiesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/CommentsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/CommentsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/CompaniesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/CompaniesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/ContactServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/ContactServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Deal/DealCategoryServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Deal/DealCategoryServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Deal/DealServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Deal/DealServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Invoice/InvoiceBookkeepingExportsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Invoice/InvoiceBookkeepingExportsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Invoice/InvoicePaymentsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Invoice/InvoicePaymentsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Invoice/InvoiceRemindersServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Invoice/InvoiceRemindersServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Invoice/InvoicesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Invoice/InvoicesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Offer/OfferCustomerApprovalServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Offer/OfferCustomerApprovalServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Offer/OffersServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Offer/OffersServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/PlanningEntriesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/PlanningEntriesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/ProfileServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/ProfileServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Projects/ProjectContractsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Projects/ProjectContractsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Projects/ProjectExpensesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Projects/ProjectExpensesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Projects/ProjectGroupsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Projects/ProjectGroupsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Projects/ProjectPaymentScheduleServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Projects/ProjectPaymentScheduleServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Projects/ProjectRecurringExpenseServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Projects/ProjectRecurringExpenseServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Projects/ProjectTasksServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Projects/ProjectTasksServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Projects/ProjectsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Projects/ProjectsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Purchases/PurchaseBookkeepingExportsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Purchases/PurchaseBookkeepingExportsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Purchases/PurchaseBudgetsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Purchases/PurchaseBudgetsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Purchases/PurchaseCategoriesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Purchases/PurchaseCategoriesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Purchases/PurchaseDraftsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Purchases/PurchaseDraftsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Purchases/PurchasePaymentsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Purchases/PurchasePaymentsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/Purchases/PurchasesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/Purchases/PurchasesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/ReceiptsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/ReceiptsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/ReportsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/ReportsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/SchedulesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/SchedulesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/TagsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/TagsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/UnitsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/UnitsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/User/UserEmploymentsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/User/UserEmploymentsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/User/UserHolidaysServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/User/UserHolidaysServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/User/UserPresencesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/User/UserPresencesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/User/UserWorkTimeAdjustmentsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/User/UserWorkTimeAdjustmentsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/User/UsersServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/User/UsersServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/VatCodeServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/VatCodeServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Functional/Service/WebHooksServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Functional/Service/WebHooksServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/MocoClientTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/MocoTestClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/AbstractServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/UnitTestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Account/CatalogServicesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Account/CatalogServicesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Account/CustomPropertiesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Account/CustomPropertiesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Account/FixedCostsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Account/FixedCostsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Account/HourlyRatesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Account/HourlyRatesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Account/InternalHourlyRatesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Account/InternalHourlyRatesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/ActivitiesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/ActivitiesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/CommentsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/CommentsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/CompaniesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/CompaniesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Invoice/InvoiceBookkeepingExportsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Invoice/InvoiceBookkeepingExportsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Invoice/InvoicePaymentsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Invoice/InvoicePaymentsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Invoice/InvoiceRemindersServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Invoice/InvoiceRemindersServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Invoice/InvoicesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Invoice/InvoicesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Offer/OfferCustomerApprovalServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Offer/OfferCustomerApprovalServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Offer/OffersServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Offer/OffersServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/PlanningEntriesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/PlanningEntriesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/ProfileServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/ProfileServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Projects/ProjectContractsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Projects/ProjectContractsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Projects/ProjectExpensesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Projects/ProjectExpensesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Projects/ProjectGroupsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Projects/ProjectGroupsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Projects/ProjectPaymentScheduleServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Projects/ProjectPaymentScheduleServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Projects/ProjectRecurringExpenseServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Projects/ProjectRecurringExpenseServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Projects/ProjectTasksServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Projects/ProjectTasksServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Projects/ProjectsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Projects/ProjectsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Purchases/PurchaseBookkeepingExportsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Purchases/PurchaseBookkeepingExportsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Purchases/PurchaseBudgetsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Purchases/PurchaseBudgetsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Purchases/PurchaseCategoriesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Purchases/PurchaseCategoriesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Purchases/PurchaseDraftsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Purchases/PurchaseDraftsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Purchases/PurchasePaymentsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Purchases/PurchasePaymentsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/Purchases/PurchasesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/Purchases/PurchasesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/ReceiptsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/ReceiptsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/ReportsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/ReportsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/SchedulesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/SchedulesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/TagsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/TagsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/UnitsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/UnitsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/User/UserEmploymentsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/User/UserEmploymentsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/User/UserHolidaysServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/User/UserHolidaysServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/User/UserPresencesServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/User/UserPresencesServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/User/UserWorkTimeAdjustmentsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/User/UserWorkTimeAdjustmentsServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/User/UsersServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/User/UsersServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/VatCodeServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/VatCodeServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Service/WebHooksServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Service/WebHooksServiceTest.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/spatie/array-to-xml" />
+      <path value="$PROJECT_DIR$/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/amphp/amp" />
+      <path value="$PROJECT_DIR$/vendor/clue/stream-filter" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/vimeo/psalm" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/fidry/cpu-core-counter" />
+      <path value="$PROJECT_DIR$/vendor/amphp/byte-stream" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/php-http/mock-client" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/vendor/php-http/client-common" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/php-http/discovery" />
+      <path value="$PROJECT_DIR$/vendor/php-http/promise" />
+      <path value="$PROJECT_DIR$/vendor/php-http/httplug" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/felixfbecker/language-server-protocol" />
+      <path value="$PROJECT_DIR$/vendor/felixfbecker/advanced-json-rpc" />
+      <path value="$PROJECT_DIR$/vendor/netresearch/jsonmapper" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2GJtwZPgHMwYSiJCGQ0PanOG7c6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/mehdi/Projects/moco-php&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/Functional/Service/Offer" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Service/Offer" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-PS-252.23892.419" />
+        <option value="bundled-php-predefined-a98d8de5180a-c72577f2c82f-com.jetbrains.php.sharedIndexes-PS-252.23892.419" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c41dae3d-2323-4f1e-a344-5029202177e2" name="Changes" comment="" />
+      <created>1666118754465</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666118754465</updated>
+      <workItem from="1666118755671" duration="5786000" />
+      <workItem from="1666179646469" duration="4228000" />
+      <workItem from="1666287178177" duration="7043000" />
+      <workItem from="1666330762918" duration="12000" />
+      <workItem from="1666462198581" duration="13911000" />
+      <workItem from="1666516274516" duration="15786000" />
+      <workItem from="1666589218326" duration="12000" />
+      <workItem from="1666637896684" duration="4342000" />
+      <workItem from="1666678632848" duration="14000" />
+      <workItem from="1666716806827" duration="4884000" />
+      <workItem from="1666768551984" duration="3178000" />
+      <workItem from="1666801159420" duration="7832000" />
+      <workItem from="1667320167999" duration="3903000" />
+      <workItem from="1667370419538" duration="460000" />
+      <workItem from="1667497177382" duration="6604000" />
+      <workItem from="1667543108973" duration="31000" />
+      <workItem from="1667725122322" duration="17283000" />
+      <workItem from="1667801738347" duration="8000" />
+      <workItem from="1667934655083" duration="1977000" />
+      <workItem from="1668101281914" duration="7069000" />
+      <workItem from="1668147707600" duration="15000" />
+      <workItem from="1668327238969" duration="10944000" />
+      <workItem from="1668407536824" duration="19000" />
+      <workItem from="1668500346113" duration="10599000" />
+      <workItem from="1668534536374" duration="5748000" />
+      <workItem from="1668666067856" duration="38000" />
+      <workItem from="1668702607623" duration="1257000" />
+      <workItem from="1668756594413" duration="1250000" />
+      <workItem from="1668965005213" duration="7089000" />
+      <workItem from="1669011958500" duration="5000" />
+      <workItem from="1669053800034" duration="85000" />
+      <workItem from="1669061719015" duration="268000" />
+      <workItem from="1669062125307" duration="793000" />
+      <workItem from="1669098661530" duration="37000" />
+      <workItem from="1669401012301" duration="1344000" />
+      <workItem from="1669536366987" duration="8694000" />
+      <workItem from="1669617189215" duration="4000" />
+      <workItem from="1669746697711" duration="1589000" />
+      <workItem from="1669790067746" duration="6000" />
+      <workItem from="1669833511949" duration="1645000" />
+      <workItem from="1669876043662" duration="17000" />
+      <workItem from="1670953676515" duration="725000" />
+      <workItem from="1670955101069" duration="165000" />
+      <workItem from="1671617471831" duration="1424000" />
+      <workItem from="1671692990278" duration="8000" />
+      <workItem from="1672655948170" duration="2888000" />
+      <workItem from="1673717319488" duration="606000" />
+      <workItem from="1673899932718" duration="616000" />
+      <workItem from="1677057260672" duration="31000" />
+      <workItem from="1679911195394" duration="161000" />
+      <workItem from="1681054626712" duration="1004000" />
+      <workItem from="1681219842492" duration="1221000" />
+      <workItem from="1681385059816" duration="12822000" />
+      <workItem from="1684666287475" duration="421000" />
+      <workItem from="1684668507158" duration="10669000" />
+      <workItem from="1684733578405" duration="7000" />
+      <workItem from="1685264485229" duration="7225000" />
+      <workItem from="1685352660175" duration="608000" />
+      <workItem from="1692341655131" duration="613000" />
+      <workItem from="1692444920813" duration="599000" />
+      <workItem from="1692475349220" duration="599000" />
+      <workItem from="1692516900421" duration="599000" />
+      <workItem from="1717142347546" duration="17185000" />
+      <workItem from="1717391690743" duration="8000" />
+      <workItem from="1724413634302" duration="5912000" />
+      <workItem from="1724654321674" duration="4118000" />
+      <workItem from="1744050623700" duration="1238000" />
+      <workItem from="1744090923873" duration="611000" />
+      <workItem from="1753646436745" duration="1931000" />
+      <workItem from="1753729275589" duration="1216000" />
+      <workItem from="1754677114864" duration="1376000" />
+      <workItem from="1754678502636" duration="57816000" />
+      <workItem from="1755060293216" duration="3010000" />
+      <workItem from="1755111678124" duration="1158000" />
+      <workItem from="1755460752557" duration="727000" />
+      <workItem from="1755461694021" duration="4213000" />
+      <workItem from="1755581415541" duration="551000" />
+      <workItem from="1755581974648" duration="3023000" />
+    </task>
+    <task id="LOCAL-00001" summary="add users functionality and project structure">
+      <created>1666476026323</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666476026323</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add mock client and httpulg common">
+      <created>1666517663339</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666517663339</updated>
+    </task>
+    <task id="LOCAL-00003" summary="move client common to dev">
+      <created>1666518062497</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666518062497</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add companies actions">
+      <created>1666769917815</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666769917815</updated>
+    </task>
+    <task id="LOCAL-00005" summary="cleaning">
+      <created>1666771600557</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666771600557</updated>
+    </task>
+    <task id="LOCAL-00006" summary="cleaning the code">
+      <created>1666803513664</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666803513664</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add custom properties">
+      <created>1667502024891</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667502024891</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit mocoClient">
+      <created>1667502061049</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667502061049</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add fixed costs">
+      <created>1667726274717</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667726274717</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add hourly rates">
+      <created>1667735914825</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667735914825</updated>
+    </task>
+    <task id="LOCAL-00011" summary="refactor">
+      <created>1667766032235</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667766032235</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add projects functionality">
+      <created>1668341094125</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668341094125</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add account catalog service">
+      <created>1668511429961</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668511429961</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add project tasks">
+      <created>1668540058334</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668540058334</updated>
+    </task>
+    <task id="LOCAL-00015" summary="remove comments">
+      <created>1668702636049</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668702636049</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add activity">
+      <created>1669538566290</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669538566290</updated>
+    </task>
+    <task id="LOCAL-00017" summary="refactor">
+      <created>1669542238525</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669542238525</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add comment entity service">
+      <created>1669834045899</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1669834045899</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add contacts service">
+      <created>1684671137744</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1684671137744</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add deal categories">
+      <created>1684674100484</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1684674100484</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add deals">
+      <created>1684690897305</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1684690897305</updated>
+    </task>
+    <task id="LOCAL-00022" summary="fix tests">
+      <created>1717147239092</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1717147239092</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Purchase Budgets">
+      <option name="closed" value="true" />
+      <created>1754981129866</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1754981129866</updated>
+    </task>
+    <task id="LOCAL-00042" summary="add Purchase Categories">
+      <option name="closed" value="true" />
+      <created>1754981722757</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1754981722757</updated>
+    </task>
+    <task id="LOCAL-00043" summary="add Purchase Drafts">
+      <option name="closed" value="true" />
+      <created>1754982136734</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1754982136734</updated>
+    </task>
+    <task id="LOCAL-00044" summary="add Purchase Payments">
+      <option name="closed" value="true" />
+      <created>1754982557916</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1754982557916</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Add Receipts">
+      <option name="closed" value="true" />
+      <created>1754985426481</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1754985426481</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Add Receipts">
+      <option name="closed" value="true" />
+      <created>1754985440992</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1754985440992</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Add Reports">
+      <option name="closed" value="true" />
+      <created>1754986371220</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1754986371220</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Add Schedules">
+      <option name="closed" value="true" />
+      <created>1754987159922</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1754987159922</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Add tags">
+      <option name="closed" value="true" />
+      <created>1755001132901</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1755001132901</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Add tags">
+      <option name="closed" value="true" />
+      <created>1755001765993</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1755001765993</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Add tags">
+      <option name="closed" value="true" />
+      <created>1755001787935</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1755001787935</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Add Units">
+      <option name="closed" value="true" />
+      <created>1755003112137</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1755003112137</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Add User Employments">
+      <option name="closed" value="true" />
+      <created>1755013856265</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1755013856265</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Add User Holidays">
+      <option name="closed" value="true" />
+      <created>1755014912302</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1755014912303</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Add User Presences">
+      <option name="closed" value="true" />
+      <created>1755015334527</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1755015334528</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Add User Work Time Adjustments">
+      <option name="closed" value="true" />
+      <created>1755016164951</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1755016164951</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Add VAT Codes">
+      <option name="closed" value="true" />
+      <created>1755022029836</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1755022029837</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Add webhooks">
+      <option name="closed" value="true" />
+      <created>1755022541983</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1755022541983</updated>
+    </task>
+    <task id="LOCAL-00059" summary="clean up">
+      <option name="closed" value="true" />
+      <created>1755024395169</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1755024395170</updated>
+    </task>
+    <task id="LOCAL-00060" summary="clean up">
+      <option name="closed" value="true" />
+      <created>1755070074769</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1755070074769</updated>
+    </task>
+    <task id="LOCAL-00061" summary="clean up">
+      <option name="closed" value="true" />
+      <created>1755070134096</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1755070134096</updated>
+    </task>
+    <task id="LOCAL-00062" summary="clean up">
+      <option name="closed" value="true" />
+      <created>1755070195194</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1755070195194</updated>
+    </task>
+    <task id="LOCAL-00063" summary="clean up">
+      <option name="closed" value="true" />
+      <created>1755070204066</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1755070204066</updated>
+    </task>
+    <task id="LOCAL-00064" summary="clean up">
+      <option name="closed" value="true" />
+      <created>1755070300262</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1755070300262</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Add SDK">
+      <option name="closed" value="true" />
+      <created>1755461855634</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1755461855635</updated>
+    </task>
+    <task id="LOCAL-00066" summary="composer update">
+      <option name="closed" value="true" />
+      <created>1755462492448</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1755462492448</updated>
+    </task>
+    <task id="LOCAL-00067" summary="chore: update README.md">
+      <option name="closed" value="true" />
+      <created>1755497686800</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1755497686801</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="add project payment schedules" />
+    <MESSAGE value="add project recurring payment" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="add purchases and clean up" />
+    <MESSAGE value="add Purchase Bookkeeping Exports" />
+    <MESSAGE value="Purchase Budgets" />
+    <MESSAGE value="add Purchase Categories" />
+    <MESSAGE value="add Purchase Drafts" />
+    <MESSAGE value="add Purchase Payments" />
+    <MESSAGE value="Add Receipts" />
+    <MESSAGE value="Add Reports" />
+    <MESSAGE value="Add Schedules" />
+    <MESSAGE value="Add tags" />
+    <MESSAGE value="Add Units" />
+    <MESSAGE value="Add User Employments" />
+    <MESSAGE value="Add User Holidays" />
+    <MESSAGE value="Add User Presences" />
+    <MESSAGE value="Add User Work Time Adjustments" />
+    <MESSAGE value="Add VAT Codes" />
+    <MESSAGE value="Add webhooks" />
+    <MESSAGE value="clean up" />
+    <MESSAGE value="Add SDK" />
+    <MESSAGE value="composer update" />
+    <MESSAGE value="chore: update README.md" />
+    <MESSAGE value="ssdf" />
+    <option name="LAST_COMMIT_MESSAGE" value="ssdf" />
+  </component>
+</project>

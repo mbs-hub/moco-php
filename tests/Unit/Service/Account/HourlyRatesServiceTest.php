@@ -2,9 +2,9 @@
 
 namespace Tests\Unit\Service\Account;
 
-use Tests\Unit\Service\AbstractServiceTest;
+use Tests\Unit\Service\UnitTestCase;
 
-class HourlyRatesServiceTest extends AbstractServiceTest
+class HourlyRatesServiceTest extends UnitTestCase
 {
     public function testGet(): void
     {

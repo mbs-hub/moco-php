@@ -6,7 +6,7 @@ use Moco\Entity\Activity;
 use Moco\Exception\InvalidRequestException;
 use Moco\Exception\NotFoundException;
 
-class ActivitiesServiceTest extends AbstractServiceTest
+class ActivitiesServiceTest extends UnitTestCase
 {
     private array $params = [
         'date'        => '2022-11-20',

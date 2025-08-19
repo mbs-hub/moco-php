@@ -6,7 +6,7 @@ use Moco\Exception\InvalidRequestException;
 use Moco\Exception\InvalidResponseException;
 use Moco\Exception\NotFoundException;
 
-class CompaniesServiceTest extends AbstractServiceTest
+class CompaniesServiceTest extends UnitTestCase
 {
     private array $createParams = [
         'name'                            => 'Company A',

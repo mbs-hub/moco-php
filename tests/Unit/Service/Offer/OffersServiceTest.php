@@ -7,9 +7,9 @@ namespace Tests\Unit\Service\Offer;
 use Moco\Entity\Offer;
 use Moco\Exception\InvalidRequestException;
 use Moco\Exception\NotFoundException;
-use Tests\Unit\Service\AbstractServiceTest;
+use Tests\Unit\Service\UnitTestCase;
 
-class OffersServiceTest extends AbstractServiceTest
+class OffersServiceTest extends UnitTestCase
 {
     private array $expectedResponse = [
         "id" => 12345,

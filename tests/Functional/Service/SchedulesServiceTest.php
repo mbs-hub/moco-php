@@ -4,9 +4,9 @@ namespace Functional\Service;
 
 use Moco\Entity\Schedule;
 use Moco\Exception\InvalidRequestException;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class SchedulesServiceTest extends AbstractServiceTest
+class SchedulesServiceTest extends FunctionalTestCase
 {
     public function testCreate(): Schedule
     {

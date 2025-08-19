@@ -5,9 +5,9 @@ namespace Tests\Unit\Service\User;
 use Moco\Exception\InvalidRequestException;
 use Moco\Exception\InvalidResponseException;
 use Moco\Exception\NotFoundException;
-use Tests\Unit\Service\AbstractServiceTest;
+use Tests\Unit\Service\UnitTestCase;
 
-class UserWorkTimeAdjustmentsServiceTest extends AbstractServiceTest
+class UserWorkTimeAdjustmentsServiceTest extends UnitTestCase
 {
     private array $createParams = [
         'user_id' => 933590696,

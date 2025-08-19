@@ -6,7 +6,7 @@ namespace Tests\Functional\Service;
 
 use Moco\Entity\Contact;
 
-class ContactServiceTest extends AbstractServiceTest
+class ContactServiceTest extends FunctionalTestCase
 {
     private array $params = [
         'firstname' => 'Peter',

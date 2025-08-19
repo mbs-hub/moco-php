@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Tests\Functional\Service\Invoice;
 
 use Moco\Entity\InvoiceBookkeepingExport;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class InvoiceBookkeepingExportsServiceTest extends AbstractServiceTest
+class InvoiceBookkeepingExportsServiceTest extends FunctionalTestCase
 {
     private array $createParams = [
         'invoice_ids' => [123, 234], // These should be replaced with valid invoice IDs in actual testing

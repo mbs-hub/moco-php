@@ -4,7 +4,7 @@ namespace Tests\Unit\Service;
 
 use Moco\Exception\InvalidRequestException;
 
-class TagsServiceTest extends AbstractServiceTest
+class TagsServiceTest extends UnitTestCase
 {
     private array $expectedTags = ["cool", "on hold", "important"];
 

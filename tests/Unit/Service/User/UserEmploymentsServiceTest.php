@@ -3,9 +3,9 @@
 namespace Tests\Unit\Service\User;
 
 use Moco\Entity\UserEmployment;
-use Tests\Unit\Service\AbstractServiceTest;
+use Tests\Unit\Service\UnitTestCase;
 
-class UserEmploymentsServiceTest extends AbstractServiceTest
+class UserEmploymentsServiceTest extends UnitTestCase
 {
     private array $expectedEmployment = [
         'id' => 123456,

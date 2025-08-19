@@ -3,9 +3,9 @@
 namespace Functional\Service\User;
 
 use Moco\Entity\UserHoliday;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class UserHolidaysServiceTest extends AbstractServiceTest
+class UserHolidaysServiceTest extends FunctionalTestCase
 {
     private int $testUserId = 933736920; // Use an existing test user ID
 

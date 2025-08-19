@@ -6,7 +6,7 @@ namespace Tests\Functional\Service;
 
 use Moco\Entity\PlanningEntry;
 
-class PlanningEntriesServiceTest extends AbstractServiceTest
+class PlanningEntriesServiceTest extends FunctionalTestCase
 {
     private int $testProjectId = 947556942; // This should be replaced with a valid project ID
 

@@ -6,7 +6,7 @@ use Moco\Entity\Comment;
 use Moco\Exception\InvalidRequestException;
 use Moco\Exception\NotFoundException;
 
-class CommentsServiceTest extends AbstractServiceTest
+class CommentsServiceTest extends UnitTestCase
 {
     private array $mockedResult = [
         "id"               => 123,

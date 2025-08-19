@@ -3,9 +3,9 @@
 namespace Functional\Service;
 
 use Moco\Exception\InvalidRequestException;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class TagsServiceTest extends AbstractServiceTest
+class TagsServiceTest extends FunctionalTestCase
 {
     private int $testProjectId = 947556942;
 

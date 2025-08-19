@@ -5,9 +5,9 @@ namespace Tests\Unit\Service\Projects;
 use Moco\Entity\ProjectRecurringExpense;
 use Moco\Exception\InvalidRequestException;
 use Moco\Exception\NotFoundException;
-use Tests\Unit\Service\AbstractServiceTest;
+use Tests\Unit\Service\UnitTestCase;
 
-class ProjectRecurringExpenseServiceTest extends AbstractServiceTest
+class ProjectRecurringExpenseServiceTest extends UnitTestCase
 {
     public function testCreate(): void
     {

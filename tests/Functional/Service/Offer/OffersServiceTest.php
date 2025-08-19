@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Tests\Functional\Service\Offer;
 
 use Moco\Entity\Offer;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class OffersServiceTest extends AbstractServiceTest
+class OffersServiceTest extends FunctionalTestCase
 {
     private array $createParams = [
         'recipient_address' => "Test Company\nTest Street 123\n12345 Test City",

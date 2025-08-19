@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\Service;
 
-use Http\Discovery\HttpClientDiscovery;
+use Http\Discovery\Psr18ClientDiscovery;
 use Http\Discovery\Strategy\MockClientStrategy;
 use Moco\Exception\InvalidRequestException;
 use Moco\Exception\InvalidResponseException;
@@ -10,16 +10,16 @@ use Moco\Exception\NotFoundException;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
-use Tests\Unit\MocoClientTest;
+use Tests\Unit\MocoTestClient;
 
-abstract class AbstractServiceTest extends TestCase
+abstract class UnitTestCase extends TestCase
 {
-    public MocoClientTest $mocoClient;
+    public MocoTestClient $mocoClient;
 
     public function __construct(?string $name = null, array $data = [], $dataName = '')
     {
-        HttpClientDiscovery::prependStrategy(MockClientStrategy::class);
-        $this->mocoClient = new MocoClientTest(
+        Psr18ClientDiscovery::prependStrategy(MockClientStrategy::class);
+        $this->mocoClient = new MocoTestClient(
             [
                 'endpoint' => 'test',
                 'token' => 'test'
@@ -30,9 +30,6 @@ abstract class AbstractServiceTest extends TestCase
 
     public function mockResponse(int $expectedStatusCode, string $expectedReturn = '')
     {
-        /**
-* mock response
-*/
         $response = $this->createMock(ResponseInterface::class);
         $response->method('getStatusCode')->willReturn($expectedStatusCode);
 
@@ -52,10 +49,5 @@ abstract class AbstractServiceTest extends TestCase
             $exception =  new InvalidResponseException();
             $this->mocoClient->getClient()->addException($exception);
         }
-    }
-
-    public function test()
-    {
-        $this->assertTrue(true);
     }
 }

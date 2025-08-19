@@ -3,9 +3,9 @@
 namespace Functional\Service;
 
 use Moco\Entity\Report;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class ReportsServiceTest extends AbstractServiceTest
+class ReportsServiceTest extends FunctionalTestCase
 {
     public function testGetAbsences(): void
     {

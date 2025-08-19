@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Tests\Functional\Service\Purchases;
 
 use Moco\Entity\PurchaseBudget;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class PurchaseBudgetsServiceTest extends AbstractServiceTest
+class PurchaseBudgetsServiceTest extends FunctionalTestCase
 {
     public function testGetCurrentYear(): void
     {

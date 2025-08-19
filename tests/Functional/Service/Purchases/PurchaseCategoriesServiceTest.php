@@ -3,9 +3,9 @@
 namespace Functional\Service\Purchases;
 
 use Moco\Entity\PurchaseCategory;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class PurchaseCategoriesServiceTest extends AbstractServiceTest
+class PurchaseCategoriesServiceTest extends FunctionalTestCase
 {
     public function testGet(): void
     {

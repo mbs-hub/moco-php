@@ -5,7 +5,7 @@ namespace Tests\Unit;
 use Moco\MocoClient;
 use Psr\Http\Client\ClientInterface;
 
-class MocoClientTest extends MocoClient
+class MocoTestClient extends MocoClient
 {
     public function getClient(): ClientInterface
     {

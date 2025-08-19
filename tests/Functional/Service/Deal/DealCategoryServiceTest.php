@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Tests\Functional\Service\Deal;
 
 use Moco\Entity\DealCategory;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class DealCategoryServiceTest extends AbstractServiceTest
+class DealCategoryServiceTest extends FunctionalTestCase
 {
     private array $params = [
         'name' => 'new deal category',

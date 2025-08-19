@@ -6,7 +6,7 @@ namespace Tests\Functional\Service;
 
 use Moco\Entity\Profile;
 
-class ProfileServiceTest extends AbstractServiceTest
+class ProfileServiceTest extends FunctionalTestCase
 {
     public function testGet(): int
     {

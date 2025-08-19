@@ -5,7 +5,7 @@ namespace Tests\Unit\Service;
 use Moco\Exception\InvalidRequestException;
 use Moco\Exception\NotFoundException;
 
-class SchedulesServiceTest extends AbstractServiceTest
+class SchedulesServiceTest extends UnitTestCase
 {
     private array $expectedResponse = [
         "id" => 123,

@@ -4,9 +4,9 @@ namespace Tests\Functional\Service\Account;
 
 use Moco\Entity\HourlyRate;
 use Moco\Exception\NotFoundException;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class HourlyRatesServiceTest extends AbstractServiceTest
+class HourlyRatesServiceTest extends FunctionalTestCase
 {
     public function testGet(): void
     {

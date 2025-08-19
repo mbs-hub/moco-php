@@ -3,9 +3,9 @@
 namespace Tests\Unit\Service\Purchases;
 
 use Moco\Exception\NotFoundException;
-use Tests\Unit\Service\AbstractServiceTest;
+use Tests\Unit\Service\UnitTestCase;
 
-class PurchaseDraftsServiceTest extends AbstractServiceTest
+class PurchaseDraftsServiceTest extends UnitTestCase
 {
     private array $expectedResponse = [
         "id" => 123,

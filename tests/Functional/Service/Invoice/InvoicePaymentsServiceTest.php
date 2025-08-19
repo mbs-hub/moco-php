@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Tests\Functional\Service\Invoice;
 
 use Moco\Entity\InvoicePayment;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class InvoicePaymentsServiceTest extends AbstractServiceTest
+class InvoicePaymentsServiceTest extends FunctionalTestCase
 {
     private array $createParams = [
         'date' => '2024-01-15',

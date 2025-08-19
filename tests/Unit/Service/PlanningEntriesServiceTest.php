@@ -7,7 +7,7 @@ namespace Tests\Unit\Service;
 use Moco\Entity\PlanningEntry;
 use Moco\Exception\NotFoundException;
 
-class PlanningEntriesServiceTest extends AbstractServiceTest
+class PlanningEntriesServiceTest extends UnitTestCase
 {
     private array $expectedResponse = [
         "id" => 12345,

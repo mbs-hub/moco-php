@@ -4,10 +4,10 @@ namespace Functional\Service\Purchases;
 
 use Moco\Entity\Purchase;
 use Moco\Exception\InvalidRequestException;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 use Tests\Functional\Service\CompaniesServiceTest;
 
-class PurchasesServiceTest extends AbstractServiceTest
+class PurchasesServiceTest extends FunctionalTestCase
 {
     public function testCreate(): Purchase
     {

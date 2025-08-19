@@ -46,16 +46,13 @@ Your feedback helps make this library better for everyone! 🚀
   - [Invoices & Payments](#invoices--payments)
   - [Offers & Deals](#offers--deals)
 - [API Reference](#-api-reference)
-- [Advanced Configuration](#-advanced-configuration)
-- [Error Handling](#-error-handling)
-- [Testing](#-testing)
 - [Contributing](#-contributing)
 - [Versioning](#-versioning)
 - [License](#-license)
 
 ## 🔧 Requirements
 
-- **PHP 7.4** or higher
+- **PHP 8.2** or higher
 - **Required Extensions**: `curl`, `json`, `mbstring`
 - **Composer** for dependency management
 - A valid [MOCO account](https://www.mocoapp.com/) and API token
@@ -235,7 +232,6 @@ $contact = $moco->contacts->create([
 
 // Get all companies with pagination
 $companies = $moco->companies->get([
-    'page' => 1,
     'tags' => 'client'
 ]);
 ```
@@ -462,16 +458,7 @@ $updated = $service->update(int $id, array $data);
 $service->delete(int $id);
 ```
 
-Each entity provides property access and automatic type conversion:
-
-```php
-$user = $moco->users->get(12345);
-echo $user->firstname; // string
-echo $user->active;    // boolean
-echo $user->created_at; // string (ISO 8601)
-```
-
-### Filtering and Pagination
+### Filtering
 
 Most services support filtering and pagination:
 
@@ -482,11 +469,6 @@ $activities = $moco->activities->get([
     'to' => '2024-01-31'
 ]);
 
-// Pagination
-$users = $moco->users->get([
-    'page' => 2
-]);
-
 // Tag filtering
 $projects = $moco->projects->get([
     'tags' => 'active,web-development'
@@ -495,55 +477,6 @@ $projects = $moco->projects->get([
 // Status filtering
 $invoices = $moco->invoice->get([
     'status' => 'open'
-]);
-```
-
-## ⚙️ Advanced Configuration
-
-### Custom HTTP Client
-
-The SDK uses HTTP client discovery by default, but you can provide your own PSR-18 compatible client:
-
-```php
-use Symfony\Component\HttpClient\Psr18Client;
-use Moco\MocoClient;
-
-$httpClient = new Psr18Client();
-$moco = new MocoClient([
-    'endpoint' => 'https://your-company.mocoapp.com/api/v1/',
-    'token' => 'your-token'
-]);
-
-// The client will be discovered automatically, but you can also 
-// configure it through dependency injection if needed
-```
-
-### Request Timeouts
-
-Configure request timeouts through your HTTP client:
-
-```php
-use Symfony\Component\HttpClient\HttpClient;
-use Symfony\Component\HttpClient\Psr18Client;
-
-$httpClient = new Psr18Client(
-    HttpClient::create([
-        'timeout' => 30,      // 30 seconds timeout
-        'max_duration' => 60  // Maximum request duration
-    ])
-);
-```
-
-### Boolean Parameter Handling
-
-The SDK automatically converts boolean values to strings for API compatibility:
-
-```php
-$user = $moco->users->create([
-    'firstname' => 'John',
-    'lastname' => 'Doe',
-    'active' => true,  // Automatically converted to 'true' string
-    'extern' => false  // Automatically converted to 'false' string
 ]);
 ```
 
@@ -562,155 +495,9 @@ try {
 }
 ```
 
-## 🚨 Error Handling
-
-The SDK provides specific exception types for different error scenarios:
-
-### Exception Types
-
-- `Moco\Exception\InvalidRequestException` - Malformed requests (4xx status codes)
-- `Moco\Exception\InvalidResponseException` - Server errors (5xx status codes)
-- `Moco\Exception\NotFoundException` - Resource not found (404 status code)
-
-### Handling Errors
-
-```php
-use Moco\Exception\InvalidRequestException;
-use Moco\Exception\InvalidResponseException;
-use Moco\Exception\NotFoundException;
-
-try {
-    $user = $moco->users->get(999999);
-} catch (NotFoundException $e) {
-    echo "User not found: " . $e->getMessage();
-} catch (InvalidRequestException $e) {
-    echo "Invalid request: " . $e->getMessage();
-    echo "Status code: " . $e->getCode();
-} catch (InvalidResponseException $e) {
-    echo "Server error: " . $e->getMessage();
-    echo "Status code: " . $e->getCode();
-}
-```
-
-### Common Error Scenarios
-
-1. **Authentication Issues**: Invalid token or endpoint
-2. **Validation Errors**: Missing required parameters
-3. **Rate Limiting**: Too many requests (implement backoff strategy)
-4. **Resource Not Found**: Accessing non-existent resources
-5. **Permission Errors**: Insufficient permissions for the operation
-
-### Best Practices
-
-```php
-// Implement retry logic for rate limiting
-$maxRetries = 3;
-$retry = 0;
-
-while ($retry < $maxRetries) {
-    try {
-        $result = $moco->users->get();
-        break;
-    } catch (InvalidResponseException $e) {
-        if ($e->getCode() === 429) { // Rate limited
-            $retry++;
-            sleep(pow(2, $retry)); // Exponential backoff
-        } else {
-            throw $e;
-        }
-    }
-}
-```
-
-### Test Configuration
-
-Functional tests require valid MOCO API credentials. Create a `.env` file:
-
-```env
-MOCO_ENDPOINT=https://your-test-company.mocoapp.com/api/v1/
-MOCO_TOKEN=your-test-api-token
-```
-
-### Code Quality
-
-Run code quality tools:
-
-```bash
-# Static analysis with Psalm
-./vendor/bin/psalm
-
-# Code style checking (PSR-12)
-./vendor/bin/phpcs src/ tests/ --standard=PSR12
-
-# Static analysis with PHPStan
-./vendor/bin/phpstan analyse src/
-```
-
-### Coverage Configuration
-
-The project is already configured with PHPUnit coverage via `phpunit.xml`:
-
-```xml
-<coverage cacheDirectory=".phpunit.cache/code-coverage"
-          processUncoveredFiles="true">
-    <include>
-        <directory suffix=".php">src</directory>
-    </include>
-</coverage>
-```
-
-### Coverage Targets
-
-We aim for high code coverage standards:
-- **Unit Tests**: >90% line coverage
-- **Functional Tests**: >90% integration coverage  
-- **Overall**: >90% combined coverage
-- **Critical Paths**: 100% coverage for authentication, validation, and error handling
-
 ## 🤝 Contributing
 
-We welcome contributions to the MOCO PHP SDK! Here's how you can help:
-
-### Development Workflow
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Make** your changes
-4. **Add** tests for new functionality
-5. **Ensure** all tests pass (`./vendor/bin/phpunit`)
-6. **Run** code quality tools (`./vendor/bin/psalm`, `./vendor/bin/phpcs`)
-7. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-8. **Push** to your branch (`git push origin feature/amazing-feature`)
-9. **Open** a Pull Request
-
-### Code Standards
-
-- Follow **PSR-12** coding standards
-- Include **comprehensive tests** for new features
-- Maintain **backward compatibility** when possible
-- Update **documentation** for API changes
-- Use **meaningful commit messages**
-
-### Adding New Services
-
-When adding support for new MOCO API endpoints:
-
-1. Create the service class extending `AbstractService`
-2. Create the corresponding entity class
-3. Add the service to `ServiceFactory`
-4. Include comprehensive tests
-5. Update documentation
-
-### Reporting Issues
-
-Found a bug or have a feature request?
-
-1. **Check** existing issues first
-2. **Create** a detailed bug report with:
-   - PHP version
-   - SDK version
-   - Code example that reproduces the issue
-   - Expected vs actual behavior
+We welcome contributions to the MOCO PHP SDK, reach out!
 
 ## 🏷️ Versioning
 
@@ -722,16 +509,7 @@ The MOCO PHP SDK follows [Semantic Versioning (SemVer)](https://semver.org/) for
 - **MINOR**: New features that are backwards compatible
 - **PATCH**: Bug fixes and improvements
 
-### Current Version: `1.0.0`
-
-### Supported PHP Versions
-
-We officially support and test against:
-- **PHP 7.4** - Minimum supported version
-- **PHP 8.0** - Fully supported
-- **PHP 8.1** - Fully supported  
-- **PHP 8.2** - Fully supported
-- **PHP 8.3** - Fully supported
+### Current Version: `2.0.0`
 
 ## 📄 License
 

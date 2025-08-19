@@ -2,7 +2,7 @@
 
 namespace Tests\Functional\Service;
 
-class CompaniesServiceTest extends AbstractServiceTest
+class CompaniesServiceTest extends FunctionalTestCase
 {
     private array $createParams = [
         'name'                            => 'Company A',

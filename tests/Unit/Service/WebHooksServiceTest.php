@@ -4,7 +4,7 @@ namespace Tests\Unit\Service;
 
 use Moco\Entity\WebHook;
 
-class WebHooksServiceTest extends AbstractServiceTest
+class WebHooksServiceTest extends UnitTestCase
 {
     private array $expectedWebHook = [
         'id' => 123456,

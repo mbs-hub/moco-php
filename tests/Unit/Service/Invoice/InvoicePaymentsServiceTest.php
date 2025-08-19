@@ -7,9 +7,9 @@ namespace Tests\Unit\Service\Invoice;
 use Moco\Entity\InvoicePayment;
 use Moco\Exception\InvalidRequestException;
 use Moco\Exception\NotFoundException;
-use Tests\Unit\Service\AbstractServiceTest;
+use Tests\Unit\Service\UnitTestCase;
 
-class InvoicePaymentsServiceTest extends AbstractServiceTest
+class InvoicePaymentsServiceTest extends UnitTestCase
 {
     private array $expectedResponse = [
         "id" => 12345,

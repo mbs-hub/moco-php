@@ -6,7 +6,7 @@ namespace Tests\Unit\Service;
 
 use Moco\Entity\Profile;
 
-class ProfileServiceTest extends AbstractServiceTest
+class ProfileServiceTest extends UnitTestCase
 {
     private array $expectedResponse = [
         "id" => 237852983,

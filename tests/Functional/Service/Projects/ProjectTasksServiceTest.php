@@ -3,9 +3,9 @@
 namespace Functional\Service\Projects;
 
 use Moco\Entity\ProjectTask;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class ProjectTasksServiceTest extends AbstractServiceTest
+class ProjectTasksServiceTest extends FunctionalTestCase
 {
     public function testCreate(): array
     {

@@ -3,9 +3,9 @@
 namespace Tests\Unit\Service\User;
 
 use Moco\Entity\UserHoliday;
-use Tests\Unit\Service\AbstractServiceTest;
+use Tests\Unit\Service\UnitTestCase;
 
-class UserHolidaysServiceTest extends AbstractServiceTest
+class UserHolidaysServiceTest extends UnitTestCase
 {
     private array $expectedHoliday = [
         'id' => 12345,

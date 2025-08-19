@@ -3,9 +3,9 @@
 namespace Tests\Unit\Service\Account;
 
 use Moco\Exception\InvalidRequestException;
-use Tests\Unit\Service\AbstractServiceTest;
+use Tests\Unit\Service\UnitTestCase;
 
-class InternalHourlyRatesServiceTest extends AbstractServiceTest
+class InternalHourlyRatesServiceTest extends UnitTestCase
 {
     public function testGet(): void
     {

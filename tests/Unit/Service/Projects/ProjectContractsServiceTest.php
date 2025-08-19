@@ -6,9 +6,9 @@ namespace Tests\Unit\Service\Projects;
 
 use Moco\Entity\ProjectContract;
 use Moco\Exception\NotFoundException;
-use Tests\Unit\Service\AbstractServiceTest;
+use Tests\Unit\Service\UnitTestCase;
 
-class ProjectContractsServiceTest extends AbstractServiceTest
+class ProjectContractsServiceTest extends UnitTestCase
 {
     private array $expectedResponse = [
         "id" => 12345,

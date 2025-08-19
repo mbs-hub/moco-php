@@ -3,9 +3,9 @@
 namespace Tests\Functional\Service\User;
 
 use Moco\Exception\InvalidRequestException;
-use Tests\Functional\Service\AbstractServiceTest;
+use Tests\Functional\Service\FunctionalTestCase;
 
-class UserWorkTimeAdjustmentsServiceTest extends AbstractServiceTest
+class UserWorkTimeAdjustmentsServiceTest extends FunctionalTestCase
 {
     private array $createParams = [
         'user_id' => 933736920,
